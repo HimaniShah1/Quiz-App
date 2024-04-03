@@ -7,7 +7,7 @@ function Results() {
   useEffect(() => {
     const fetchQuizResult = async () => {
       try {
-        const response = await fetch('http://localhost:3001/result'); 
+        const response = await fetch('https://quiz-app-2wke.onrender.com/result'); 
         if (!response.ok) {
           throw new Error('Failed to fetch quiz result');
         }

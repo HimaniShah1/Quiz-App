@@ -24,7 +24,7 @@ function QuizPage() {
   useEffect(() => {
     const fetchQuizDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/quizzes/${_id}`);
+        const response = await fetch(`https://quiz-app-2wke.onrender.com/quizzes/${_id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch quiz details');
         }
@@ -76,7 +76,7 @@ function QuizPage() {
     console.log('Form Data with Answers:', formDataWithAnswers);
 
     try {
-      const response = await fetch('http://localhost:3001/saveQuizResults', {
+      const response = await fetch('https://quiz-app-2wke.onrender.com/saveQuizResults', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function QuizPage() {
 
   const deleteQuiz = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/quizzes/${_id}`, {
+      const response = await fetch(`https://quiz-app-2wke.onrender.com/quizzes/${_id}`, {
         method: 'DELETE',
       })
       .then(response => {

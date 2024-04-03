@@ -13,7 +13,7 @@ function Quizes() {
 
     const fetchQuizzes = async () => {
         try {
-          const response = await fetch('http://localhost:3001/quizzes');
+          const response = await fetch('https://quiz-app-2wke.onrender.com/quizzes');
           if (!response.ok) {
             throw new Error('Failed to fetch quizzes');
           }

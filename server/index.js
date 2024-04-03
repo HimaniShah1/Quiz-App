@@ -12,7 +12,7 @@ const app = express();
 const salt = bcrypt.genSaltSync(10);
 const secret = 'xhwqedbcikwqcljcbnjwdhciw';
 
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+app.use(cors({credentials: true, origin: 'https://quiz-app-1-yst4.onrender.com'}));
 app.use(express.json());
 app.use(cookieParser());
 

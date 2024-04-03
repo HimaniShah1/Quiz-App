@@ -9,7 +9,6 @@ function Quiz({ id, title}) {
         <Link to={ `/quiz/${id}` }>
         <div className='quiz-title'><h1>{title}</h1></div>
         </Link>
-        {/* <div className='quiz-link'>Quiz Link: </div> */}
       
     </div>
   )

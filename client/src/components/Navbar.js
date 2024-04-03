@@ -8,7 +8,7 @@ function Navbar() {
 
 
     useEffect(() => {
-        fetch('http://localhost:3001/profile', {
+        fetch('https://quiz-app-2wke.onrender.com/profile', {
             credentials: 'include',
         }).then(response => {
             response.json().then(userInfo => {
@@ -18,7 +18,7 @@ function Navbar() {
     },[]);
 
     function logout() {
-        fetch('http://localhost:3001/logout',{
+        fetch('https://quiz-app-2wke.onrender.com/logout',{
             credentials: 'include',
             method: 'POST',
         });

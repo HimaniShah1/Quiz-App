@@ -72,7 +72,7 @@ const CreateQuiz = () => {
         }))
       };
   
-      const response = await fetch('http://localhost:3001/createquiz', {
+      const response = await fetch('https://quiz-app-2wke.onrender.com/createquiz', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

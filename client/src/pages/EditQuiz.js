@@ -23,7 +23,7 @@ const EditQuiz = () => {
     console.log("Fetching quiz details for ID:", id); 
     const fetchQuizDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/quizzes/${id}`);
+        const response = await fetch(`https://quiz-app-2wke.onrender.com/quizzes/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch quiz details');
         }
@@ -96,7 +96,7 @@ const EditQuiz = () => {
 
     try {
         console.log("Saving quiz changes:", quizDetails);
-      const response = await fetch(`http://localhost:3001/quizzes/${id}`, {
+      const response = await fetch(`https://quiz-app-2wke.onrender.com/quizzes/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
